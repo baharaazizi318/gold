@@ -6,6 +6,37 @@
 
 
 /* header*/
+.marquee{
+    width:100%;
+    overflow:hidden;
+    background:black;
+    padding:10px 0;
+}
+
+.marquee-content{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    white-space:nowrap;
+    width:max-content;
+    animation:scroll 15s linear infinite;
+    direction: rtl;
+}
+
+.marquee-content p{
+    margin:0;
+    color: white;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
 .icons{
     list-style:none;
     display:flex;
@@ -14,6 +45,13 @@
     margin-right:20px; 
     width:100%;
     height:5vh;
+    position: relative;
+  }
+   .icons i{
+  
+    right:60px;
+    margin-top:40px;
+    gap:20px;
   }
 
 
@@ -25,24 +63,29 @@
 .login{
     position:absolute;
     left:20px;
-    top:20px;
+    top:70px;
     width:200px;
     height:50px;
-
     color:black;
     font-size:18px;
     cursor:pointer;
+    text-decoration:none;
+  
+    
+ 
+   
 }
 
 header{
     width:100%;
-    height:10vh;
+    height:15vh;
     position:fixed;
     background-color:white;
     text-align:center;
     position:relative;
 }
 
+/* #D3B9A5  C8A48A */
 
 nav ul{
     list-style:none;
@@ -64,70 +107,25 @@ nav ul li a{
     
 }
 
-.login{
-    color:black;
-    font-size: 18px;
-    cursor: pointer;
-    padding-top: 20px;
-    width: 200px;
-    height: 50px;
-    text-align:left;
-   }
-
-
-/* input*/
-
-.search{
-    width: 550px;
-    height: 60px;
-    text-align: center;
-    border-radius: 30px;
-    margin-top: 20px;
-    border: 1px solid gray;
-}
-
-    
 
 
 /* section*/
 
 .content{
     width:100%;
-    height:75vh;
-    background-image: url(../gold/images/g1.jpg);
+    height:70vh;
+    background-image: url(../gold/images/perasta2.jpg);
     background-size:cover;
-    background-position: center;
+    background-position:center;
     background-repeat: no-repeat;
-    text-align: right;
+    text-align:right;
     padding-top: 300px;
-}
+    position:relative;
 
-.content h2{
-    font-size:40px;
-    color:black;
-    margin-bottom:20px;
-   
-}
-.content p{
-    font-size:24px;
-    color:black;
-   
-}
-
-button{
-    padding: 10px 50px;
-    margin-top: 20px;
-    margin-right: 20px;
-    color:black;
-    font-size: 18px;
-    cursor: pointer; 
+    
 }
 
 
-button:hover{
-    background-color:#ccc;
-    border:2px solid black;
-}
 .send{
     width: 100%;
     padding: 30px 20px;
@@ -165,19 +163,83 @@ button:hover{
     flex-wrap: wrap;
     justify-content: center;
     gap:20px;
-    
-}
+    }
 
 .card div{
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    margin-top:10px;
-    border-radius: 6px;
-    box-shadow:0 0 5px gray ;
-    text-align: center;
-    
+    width:300px;
+    border-radius:8px;
+    overflow:hidden;
+    margin:0;
+    padding:0;
 }
+
+.card img{
+    width:100%;
+    height:300px;
+    display:block;
+    object-fit:cover;
+}
+
+.card h3 {
+    text-align:center;
+    padding:10px 0;
+}
+.card p {
+    text-align:center;
+    padding-top:1px ;
+    font-weight: bold;
+    margin-top: 1px;
+}
+/* section*/
+
+.container{
+    width:100%;
+    height:35vh;
+    background-image: url(../gold/images/perasta.jpg);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align:right;
+    padding-top:300px;
+    margin-top: 40px;
+    position:relative;
+
+}
+.container h2{
+    
+    font-size:40px;
+    color:white;
+    margin-bottom:20px;
+    position:absolute;
+    top:100px;
+    right:500px;
+   
+}
+.container p{
+    font-size:24px;
+    color:white;
+    position:absolute;
+    top:160px;
+    right:500px;
+}
+.btn{
+    padding: 10px 50px;
+    margin-top: 20px;
+    margin-right: 20px;
+    color:white;
+    font-size: 18px;
+    cursor: pointer; 
+    position:absolute;
+    top:180px;
+    right:500px;
+   border: 1px solid white;
+   background-color: black;
+}
+
+
+.btn:hover{
+    background-color:white;
+    border:2px solid black;}
 
 
 
