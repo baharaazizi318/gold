@@ -55,11 +55,7 @@
   }
 
 
-  h1{
-    text-align: center;
-    color:black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+  
 .login{
     position:absolute;
     left:20px;
@@ -70,13 +66,16 @@
     font-size:18px;
     cursor:pointer;
     text-decoration:none;
-  
-    
  
-   
+}
+.login:hover{
+    background:white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(49, 46, 38, 0.4);
 }
 
 header{
+    overflow:visible;
     width:100%;
     height:15vh;
     position:fixed;
@@ -93,33 +92,86 @@ header{
     border-radius: 50%;
 }
 
+/* nav */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-
-
-
-
-/* #D3B9A5  C8A48A */
-
-nav ul{
+.menu{
     list-style:none;
     display:flex;
-    justify-content: center;
-    gap:40px;
-    direction:rtl;
-
+    justify-content:center;
+    background:white;
 }
 
-nav ul li{
-    justify-content: center;
-    text-align: center;
+.menu li{
+    position:relative;
   
 }
-nav ul li a{
-    text-decoration: none;
+
+.menu li a{
+    display:block;
+    padding:15px 25px;
     color:black;
-    
+    text-decoration:none;
+
 }
+
+/* submenue*/
+.submenu{
+   position:absolute;
+    top:100%;
+    right:0;
+    list-style:none;
+    background:white;
+    min-width:180px;
+    display:none;
+    z-index:9999;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.submenu li a{
+    color:black;
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+}
+
+.submenu li a:hover{
+    background:#D4AF37;
+    color:white;
+}
+
+/* */
+.menu li:hover .submenu{
+    display:block;
+}
+
+/* submenue1*/
+.submenu1{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;   /* برای سایت راست‌چین */
+    background:white;
+    list-style: none;
+    min-width:250px;
+    padding: 0;
+    color:white;
+}
+
+.submenu li:hover > .submenu1{
+    display: block;
+}
+.submenu1 li:hover > .submenu{
+    display: none;
+}
+.submenu li{
+    position: relative;
+}
+
 
 
 
@@ -208,7 +260,7 @@ nav ul li a{
 
 /*collection */
 .card{
-    margin-top:40px;
+    margin-top:5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -240,59 +292,89 @@ nav ul li a{
     padding-top:1px ;
     font-weight: bold;
     margin-top: 1px;
+   
 }
 /* section*/
 
-.container{
-    width:100%;
-    height:20rem;
-    background-image: url(../gold/images/perasta.jpg);
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align:right;
-    padding-top:300px;
-    margin-top: 40px;
+
+.slider{
+    width:75%;
+    height:90vh;
     position:relative;
+    overflow:hidden;
+    margin:auto;
+    border-radius:20px;
+  
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transition:opacity 1s ease;
+    margin-top:150px;
+    border-radius:20px;
+  
+   
+    
 
 }
-.container h2{
+
+.slide:nth-child(1){
+    background-image:url("../gold/images/nth1.jpg");
+}
+
+.slide:nth-child(2){
+    background-image:url("../gold/images/nth2.jpg");
+}
+
+.slide:nth-child(3){
+    background-image:url("../gold/images/nth3.jpg");
+}
+.slide:nth-child(4){
+    background-image:url("../gold/images/nth4.jpg");
+}
+.slide:nth-child(5){
+    background-image:url("../gold/images/nth5.jpg");
+}
+.slide:nth-child(6){
+    background-image:url("../gold/images/nth6.jpg");
+}
+.slide:nth-child(7){
+    background-image:url("../gold/images/nth7.jpg");
+}
+.slide:nth-child(8){
+    background-image:url("../gold/images/nth8.jpg");
+}
+
+.slide.active{
+    opacity:1;
+}
+
+
+ .slide h2{
     
     font-size:40px;
-    color:white;
+    color: #C9A227;
     margin-bottom:20px;
     position:absolute;
-    top:100px;
-    right:500px;
-   
+    top:50px;
+    right:50px;
+    text-shadow: 2px 0px #FFD700;
+    font-family:Helvetica, sans-serif,Arial;
 }
-.container p{
+
+.slide  p{
     font-size:24px;
-    color:white;
+    color:#C9A227;
     position:absolute;
-    top:160px;
-    right:500px;
+    top:100px;
+    right:50px;
+     text-shadow: 2px 0px #FFD700;
 }
-.btn{
-    padding: 10px 50px;
-    margin-top: 20px;
-    margin-right: 20px;
-    color:white;
-    font-size: 18px;
-    cursor: pointer; 
-    position:absolute;
-    top:180px;
-    right:500px;
-   border: 1px solid white;
-   background-color: black;
-}
-
-
-.btn:hover{
-    background-color:white;
-    border:2px solid black;}
-
-
 /* section*/
 
 /* title*/
@@ -307,14 +389,25 @@ nav ul li a{
     font-family: sans-serif;
     font-size: 26px;
     padding:20px;
+    color: #3A2E2A;;
+    
   
 }
 .title button{
-    width:150px;
+    width:200px;
     height: 40px;
     margin-top:5px;
     font-size:19px;
+    color: #3A2E2A;
+    border: 1px solid black;
+    background-color: white;
+    padding: 12px 25px;
+    cursor: pointer;
 }
+button:hover{
+    background-color:  #3A2E2A;;
+}
+
 
 
 .Aves{
@@ -333,6 +426,7 @@ nav ul li a{
     margin:0;
     padding:0;
     border: 1px solid gray;
+     background-color: #FAF5EF;
     
     
   
@@ -482,7 +576,7 @@ nav ul li a{
 .footer{
     width: 100%;
     height:450px;
-    background-color:#1A1A1A;         
+   background: #F7F7F7;
     margin-top: 150px;
     display: flex;
     position: relative;
@@ -496,7 +590,7 @@ nav ul li a{
 
 .App{
     margin-top:20px;
-    color: white;
+    color: #3A2E2A; 
     position: absolute;
     left: 150px;
 
@@ -552,32 +646,43 @@ nav ul li a{
 
 .deal{
     font-size: 24px;
-    color: white;
+    color:#3A2E2A;
     margin-bottom: 40px;
 }
 .link a{
     text-decoration: none;
-    color: white;
+    color:#3A2E2A ;
 }
 
 
 .foot{
-    background-color:#1A1A1A;
-    color:white;
+    background-color:#F7F7F7;
+    color: #3A2E2A; 
     text-align:center;
     padding:20px;
     margin:0;
     border-top:1px solid #444;
 }
 .foot1{
-    background-color:#1A1A1A;
-    color:white;
+    background-color:#F7F7F7;
+    color: #3A2E2A; 
     text-align:center;
     padding:20px;
     margin:0;
     padding:4px;
    
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
