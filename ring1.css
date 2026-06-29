@@ -99,14 +99,23 @@ header{
         transform:translateX(-100%);
     }
 }
-
 .container{
     width: 100%;
-    height:500px;
-    background-image: url(../gold/images/bground-ring2.jpg);
+    height: 500px;
+    background-image: url(./images-ring/bg-ring.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;}
+    background-position: center;
+    position: relative;
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
 
 .container p{
     color: white;
@@ -126,42 +135,59 @@ header{
     justify-content: center;
     gap:20px;
     position: relative;
+
     }
+
+.card a{
+    text-decoration: none;
+    text-align:center;
+    padding-top:1px ;
+    margin-top: 1px;
+    color: goldenrod;
+}
+
+
 
 .card div{
     width:300px;
     overflow:hidden;
     margin:0;
     padding:0;
-   
+
 }
+
+
 
 .card img{
     width:100%;
     height:400px;
     display:block;
     object-fit:cover;
-    border: 1px solid goldenrod;
+    border: 1px solid  #D4AF37;
+    box-shadow:0 10px 30px rgba(228, 190, 55, 0.12);
+    border-radius: 6px;
+    transition: 0.4s;
+    
+    
   
+}
+
+.card img:hover{
+    transform: translateY(-10px);
+    box-shadow:0 20px  40px rgba(212,175,55,.35);
 }
 
 .card h3 {
     text-align:center;
     padding:10px 0;
 }
-.card p {
-    text-align:center;
-    padding-top:1px ;
-    font-weight: bold;
-    margin-top: 1px;
-   
-}
+
 
 /* FOOTER*/
 .footer{
     width: 100%;
     height:450px;
-   background: #F7F7F7;
+   background: #FFFCF5;
     margin-top: 150px;
     display: flex;
     position: relative;
@@ -241,7 +267,7 @@ header{
 
 
 .foot{
-    background-color:#F7F7F7;
+    background-color:#FFFCF5;
     color: #3A2E2A; 
     text-align:center;
     padding:20px;
@@ -249,7 +275,7 @@ header{
     border-top:1px solid #444;
 }
 .foot1{
-    background-color:#F7F7F7;
+    background-color:#FFFCF5;
     color: #3A2E2A; 
     text-align:center;
     padding:20px;
