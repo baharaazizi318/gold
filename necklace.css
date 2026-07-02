@@ -40,6 +40,13 @@ header{
 
 }
 
+
+
+/* */
+.menu li:hover .submenu{
+    display:block;
+}
+
 /* submenue*/
 .submenu{
    position:absolute;
@@ -123,29 +130,20 @@ header{
         transform:translateX(-100%);
     }
 }
+
 .container{
     width: 100%;
-    height: 500px;
-    background-image: url(./images-ring/bg-ring.jpg);
+    height:500px;
+    background-image: url(../gold/images-ring/bg-necklace.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.container::before{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.4);
-}
-
+    position: relative;}
 
 .container p{
-    color: white;
+    color: goldenrod;
     position: absolute;
-    top:400px;
-    left: 700px;
+    top:350px;
+    left: 650px;
     font-size:40px;
     z-index: 100;
 
@@ -153,13 +151,14 @@ header{
 
 /*collection */
 .card{
-    margin-top:100px;
+    margin-top:60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:20px;
     position: relative;
-
+    
+  
     }
 
 .card a{
@@ -169,6 +168,8 @@ header{
     margin-top: 1px;
     color: goldenrod;
 }
+
+
 
 
 
@@ -206,6 +207,7 @@ header{
     padding:10px 0;
 }
 
+   
 
 /* FOOTER*/
 .footer{
@@ -268,9 +270,7 @@ header{
     left: 70px;
     box-shadow: 4px 4px 4px rgb(104, 93, 64);
     border: none;
-    font-size:18px;
-   
-   
+    font-size:18px;  
 }
 
 .link{

@@ -206,7 +206,7 @@ header{
 .content button:hover{
    width: 100px;
    height: 50px;
-   background-color:white;
+   background-color:black;
    cursor: pointer;
    opacity: 0.5;
    transform: translate(-5px);

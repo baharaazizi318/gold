@@ -39,7 +39,6 @@ header{
     text-decoration:none;
 
 }
-
 /* submenue*/
 .submenu{
    position:absolute;
@@ -68,6 +67,31 @@ header{
 .menu li:hover .submenu{
     display:block;
 }
+
+/* submenue1*/
+.submenu1{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;   /* برای سایت راست‌چین */
+    background:white;
+    list-style: none;
+    min-width:250px;
+    padding: 0;
+    color:white;
+}
+
+.submenu li:hover > .submenu1{
+    display: block;
+}
+.submenu1 li:hover > .submenu{
+    display: none;
+}
+.submenu li{
+    position: relative;
+}
+
+
 
 /* header*/
 .marquee{
@@ -113,13 +137,16 @@ header{
     height:500px;
 }
 
-.image1 img{
-    width:800px;
-    height:600px;
+.image1 {
+    width:770px;
+    height:500px;
 }
+.demo{
+    width:200px;
+    height:200px;
+    margin: 20px;
 
-
-
+}
 
 /* left side*/
 .price{

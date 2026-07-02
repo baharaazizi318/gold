@@ -6,9 +6,7 @@
 .container{
     width: 100%;
     height:700px;
-    background-image: url(../gold/images/gold.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #F5F5F5;
     position: relative;
    
   
@@ -112,42 +110,46 @@ header{
 
 
 .content{
-    width: 450px;
-    min-height:550px;
-    background-color:rgba(216,195,165,0.18); 
+    width: 400px;
+    min-height:250px;
+    background-color: white;
     margin:auto;
     justify-content: center;
     margin-bottom: 200px;
     position: absolute;
-    top:50px;
+    top:150px;
     left:550px;
     text-align: right;
     border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
     
 }
 .content h1{
     margin: 40px;
-    color: white;
+    color: black;
     z-index: 100;
 }
 
 .content p{
+    color: black;
     margin:20px ;
     z-index: 100;
     
 }
  .input1{
-    direction: rtl;
-    width:400px;
+    direction: ltr;
+    width:350px;
     height:40px ;
     margin: 10px;
     z-index: 100;
+    border: 2px solid #EAEAEA;
 }
 .input2{
     width: 150px;
     height: 50px;
     margin: 20px;
     z-index: 100;
+     border: 2px solid #EAEAEA;
 }
 .content span{
  
@@ -157,21 +159,26 @@ header{
     width: 150px;
     height: 40px;
     margin: 20px;
+     border: 2px solid #EAEAEA;
 
 }
 .content button{
-    width:400px;
-    height:40px ;
-    margin: 10px;
-    margin-bottom:40px;
+    width:200px;
+    height:50px ;
+    margin-right:70px;
+    margin-bottom: 20px;
+    background-color: #B8B8B8;
+    border: none;
+}
+.content button{
+    cursor: pointer;
 }
 
 
 button a{
     text-decoration: none;
-}
-.content p{
-    color: white;
+     color: white;
+     font-size: 20px;
 }
 
 
