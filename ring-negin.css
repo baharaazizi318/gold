@@ -3,14 +3,21 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    padding-top:50px;
+   
+}
 
 header{
-    width:100%;
-    height:10vh;
-    position:fixed;
-    background-color:white;
-    text-align:center;
-    position:relative;
+    width: 100%;
+    height:auto;      /* یا auto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1000;
+    overflow: visible;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
 }
 /* nav */
 

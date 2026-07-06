@@ -3,6 +3,10 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+     position:relative;
+     padding-top:130px;
+}
 
 
 /* header*/
@@ -75,13 +79,15 @@
 }
 
 header{
-    overflow:visible;
-    width:100%;
-    height:15vh;
-    position:fixed;
-    background-color:white;
-    text-align:center;
-    position:relative;
+    width: 100%;
+    height:auto;      /* یا auto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1000;
+    overflow: visible;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
 }
 .logo{
     width:70px;
@@ -119,6 +125,11 @@ header{
     text-decoration:none;
 
 }
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
 
 /* submenue*/
 .submenu{
@@ -302,25 +313,29 @@ header{
 
 
 .slider{
-    width:75%;
-    height:90vh;
+    width:100%;
+    height:50vh;
     position:relative;
     overflow:hidden;
     margin:auto;
     border-radius:20px;
-  
+    display: flex;
+    flex-wrap: wrap;
 }
+
 
 .slide{
     position:absolute;
-    width:100%;
-    height:100%;
+    width:50%;
+    height:75%;
     background-size:cover;
     background-position:center;
     opacity:0;
     transition:opacity 1s ease;
-    margin-top:150px;
+    margin-top:100px;
+    margin-left:200px;
     border-radius:20px;
+     display:inline-block;
   
    
     
@@ -328,30 +343,36 @@ header{
 }
 
 .slide:nth-child(1){
-    background-image:url("../gold/images/nth1.jpg");
+    background-image:url("../gold/images-ring/ring4.jpg");
 }
 
 .slide:nth-child(2){
-    background-image:url("../gold/images/nth2.jpg");
+    background-image:url("../gold/images-ring/earing1.jpg");
 }
 
 .slide:nth-child(3){
-    background-image:url("../gold/images/nth3.jpg");
+    background-image:url("../gold/images-ring/ring1.jpg");
 }
 .slide:nth-child(4){
-    background-image:url("../gold/images/nth4.jpg");
+    background-image:url("../gold/images-ring/earing4.jpg");
 }
 .slide:nth-child(5){
-    background-image:url("../gold/images/nth5.jpg");
+    background-image:url("../gold/images-ring/ring2.jpg");
 }
 .slide:nth-child(6){
-    background-image:url("../gold/images/nth6.jpg");
+    background-image:url("../gold/images-ring/necklace1.jpg");
 }
 .slide:nth-child(7){
-    background-image:url("../gold/images/nth7.jpg");
+    background-image:url("../gold/images-ring/earing3.jpg");
 }
 .slide:nth-child(8){
-    background-image:url("../gold/images/nth8.jpg");
+    background-image:url("../gold/images-ring/necklace2.jpg");
+}
+.slide:nth-child(9){
+    background-image:url("../gold/images-ring/necklace4.jpg");
+}
+.slide:nth-child(10){
+    background-image:url("../gold/images-ring/ring6.jpg");
 }
 
 .slide.active{
@@ -359,25 +380,24 @@ header{
 }
 
 
- .slide h2{
-    
+.beauty h2{
     font-size:40px;
     color: #C9A227;
-    margin-bottom:20px;
+    margin-top: 100px;
     position:absolute;
-    top:50px;
-    right:50px;
+    right:230px;
     text-shadow: 2px 0px #FFD700;
     font-family:Helvetica, sans-serif,Arial;
 }
 
-.slide  p{
-    font-size:24px;
-    color:#C9A227;
+.beauty p{
+    font-size:30px;
+    color: #C9A227;
+    margin-top: 150px;
     position:absolute;
-    top:100px;
-    right:50px;
-     text-shadow: 2px 0px #FFD700;
+    right:230px;
+    text-shadow: 2px 0px #FFD700;
+    font-family:Helvetica, sans-serif,Arial;
 }
 /* section*/
 
