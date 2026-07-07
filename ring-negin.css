@@ -97,6 +97,9 @@ header{
 .submenu li{
     position: relative;
 }
+nav a:hover{
+    color: #C9A227;
+}
 
 
 
@@ -134,10 +137,11 @@ header{
 .container{
     width: 100%;
     height:500px;
-    background-image: url(../gold/images-ring/bg-ring-negin.jpg);
+     background-image: url(../gold/images-ring/bg-ring-negin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;}
+ 
 
 .container p{
     color: goldenrod;

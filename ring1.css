@@ -96,6 +96,9 @@ header{
 .submenu li{
     position: relative;
 }
+nav a:hover{
+    color: #C9A227;
+}
 
 
 /* header*/

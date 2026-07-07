@@ -3,14 +3,21 @@
     margin:0;
     box-sizing: border-box;
 }
+body{
+    padding-top:50px;
+   
+}
 
 header{
-    width:100%;
-    height:10vh;
-    position:fixed;
-    background-color:white;
-    text-align:center;
-    position:relative;
+    width: 100%;
+    height:auto;      /* یا auto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 1000;
+    overflow: visible;
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
 }
 /* nav */
 
@@ -39,7 +46,6 @@ header{
     text-decoration:none;
 
 }
-
 /* submenue*/
 .submenu{
    position:absolute;
@@ -91,15 +97,11 @@ header{
 .submenu li{
     position: relative;
 }
-
-
-/* */
-.menu li:hover .submenu{
-    display:block;
-}
 nav a:hover{
     color: #C9A227;
 }
+
+
 
 /* header*/
 .marquee{
@@ -133,26 +135,18 @@ nav a:hover{
 }
 
 .container{
+    margin-top: 40px;
     width: 100%;
     height:500px;
-    background-image: url(../gold/images-ring/bg-braclet.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;}
+   
+  }
 
-.container p{
-    color: goldenrod;
-    position: absolute;
-    top:350px;
-    left: 650px;
-    font-size:40px;
-    z-index: 100;
 
-}
 
 /*collection */
 .card{
-    margin-top:70px;
+    
+    margin-top:100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
