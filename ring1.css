@@ -231,14 +231,7 @@ nav a:hover{
     
 }
 
-.App{
-    margin-top:20px;
-    color: #3A2E2A; 
-    position: absolute;
-    left: 150px;
 
-    
-}
 
 
 .mark{
@@ -253,13 +246,7 @@ nav a:hover{
 
 
 
-.QR{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top:150px;
-    left:150px;
-}
+
 .footer button{
    margin-top: 270px;
     background-color: #fff;
