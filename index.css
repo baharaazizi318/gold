@@ -162,6 +162,13 @@ nav a:hover {
     transition: 0.4;
 }
 
+.menu li  a.active{
+    color: #C9A227;
+    transform: scale(0.95);
+}
+
+
+
 /* submenue*/
 .submenu {
     position: absolute;
