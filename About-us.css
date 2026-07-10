@@ -142,6 +142,227 @@
     margin:0;
 }
 
+/* responsive */
+/* ==========================
+   Laptop / Tablet (1024px)
+========================== */
+@media (max-width:1024px){
+
+.contain{
+    width:100%;
+    height:auto;
+    gap:40px;
+    padding:40px 30px;
+    align-items:center;
+}
+
+.left-side,
+.right-side{
+    width:48%;
+    margin:0;
+}
+
+.left-side video{
+    width:100%;
+    height:auto;
+    margin:0;
+}
+
+.right-side h1{
+    font-size:32px;
+    margin:15px 0;
+    padding:0;
+}
+
+.right-side p{
+    font-size:12px;
+    line-height:1.8;
+}
+
+/* عنوان داستان ما */
+.content1{
+    position:static;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.icon1{
+    justify-content:center;
+}
+
+/* آمار */
+.create{
+    height:auto;
+    gap:50px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:40px 20px;
+}
+
+.toggle{
+    width:220px;
+    text-align:center;
+}
+
+/* نظرات مشتریان */
+.demo{
+    gap:20px;
+}
+
+.demo .profile{
+    width:300px;
+    height:auto;
+}
+
+.top{
+    flex-direction:column;
+    text-align:center;
+}
+
+.top img{
+    margin-top:15px;
+}
+
+}
+
+
+/* =========================
+      Mobile (768px)
+========================= */
+@media (max-width:768px){
+
+.contain{
+    margin-top:30px;
+    padding:20px;
+}
+
+.left-side,
+.right-side{
+    width:100%;
+}
+
+.left-side video{
+    width:100%;
+    border-radius:10px;
+}
+
+.right-side h1{
+    font-size:30px;
+    margin:10px 0;
+    padding:0;
+}
+
+.right-side p{
+    font-size:12px;
+    line-height:1;
+}
+
+.content1{
+    position:static;
+    margin-bottom:15px;
+}
+
+.icon1{
+    justify-content:center;
+}
+
+.line{
+    width:70px;
+}
+
+.create{
+    gap:30px;
+}
+
+.toggle{
+    width:45%;
+}
+
+.toggle i{
+    font-size:28px;
+}
+
+.toggle .para{
+    font-size:22px;
+}
+
+.demo{
+    padding:10px;
+}
+
+.demo .profile{
+    width:100%;
+    padding:20px;
+}
+
+.top{
+    flex-direction:column;
+    text-align:center;
+}
+
+.top img{
+    margin-top:15px;
+}
+
+}
+
+/* =========================
+     Small Mobile (480px)
+========================= */
+@media (max-width:480px){
+
+.contain{
+    gap:20px;
+    padding:15px;
+}
+
+.right-side h1{
+    font-size:24px;
+}
+
+.right-side p{
+    font-size:15px;
+}
+
+.line{
+    width:50px;
+}
+
+.star{
+    font-size:16px;
+}
+
+.create{
+    padding:25px 10px;
+}
+
+.toggle{
+    width:100%;
+}
+
+.toggle i{
+    font-size:26px;
+}
+
+.toggle .para{
+    font-size:20px;
+}
+
+.demo .profile{
+    padding:15px;
+}
+
+.info h4{
+    font-size:18px;
+}
+
+.top p{
+    font-size:14px;
+    line-height:1.7;
+}
+
+}
+
 
 
 

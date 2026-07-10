@@ -103,13 +103,13 @@ label{
 
 input,
 textarea{
-    width: 75%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-    outline: none;
-    box-shadow: 1px 1px 0px #ccc ;
+    width:70%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+    outline:none;
+    box-shadow:1px 1px 4px rgba(0,0,0,.1);
 }
 
 input:focus,
@@ -123,17 +123,17 @@ textarea{
 }
 
 button{
+    width:180px;
+    padding:12px;
+    margin-top:5px;
+    background:#b8860b;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
     display: block;
-    margin-top:20px;
-    width: 10%;
-    padding: 12px;
-    background: #b8860b;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 17px;
-    transition: .3s;
 }
 
 button:hover{
@@ -142,22 +142,216 @@ button:hover{
 
 /* location*/
 
-iframe {
-    width: 60%;
-    height: 500px;
-    border: none;
-    border-radius: 10px;
-    justify-content: center;
-    text-align: center;
-    margin-right: 300px;
-    box-shadow: 1px 2px 0px gray;
+iframe{
+    display:block;
+    width:50%;
+    max-width:1200px;
+    height:450px;
+    margin:50px auto;
+    border:1px solid goldenrod;
+    outline:1px solid goldenrod;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
 }
 
 
 
+/* responsive */
+/* ===============================
+   Tablet (1024px)
+================================ */
+@media (max-width:1024px){
+
+.container{
+    width:95%;
+    gap:20px;
+}
+
+.right-side,
+.left-side{
+    flex:1 1 100%;
+}
+
+h1{
+    font-size:34px;
+}
+
+.right-side p,
+.left-side p{
+    font-size:17px;
+    line-height:2;
+}
+
+.right-side span,
+.left-side span{
+    font-size:18px;
+}
+
+input,
+textarea{
+    width:100%;
+}
+
+button{
+    width:200px;
+}
+
+iframe{
+    width:95%;
+    height:400px;
+}
+
+}
 
 
+/* ===============================
+   Tablet & Mobile (768px)
+================================ */
+@media (max-width:768px){
 
+.container{
+    width:92%;
+    margin:30px auto;
+}
 
+h1{
+    font-size:30px;
+}
 
+.right-side,
+.left-side{
+    padding:15px;
+}
 
+.right-side p,
+.left-side p{
+    font-size:16px;
+}
+
+.right-side span,
+.left-side span{
+    font-size:17px;
+}
+
+label{
+    font-size:15px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+}
+
+button{
+    width:100%;
+}
+
+iframe{
+    width:100%;
+    height:320px;
+}
+
+}
+
+/* ===========================
+      Mobile 480px
+=========================== */
+@media (max-width:480px){
+
+body{
+    padding-top:120px;
+}
+
+/* Container */
+
+.container{
+    width:95%;
+    margin:20px auto;
+    gap:20px;
+}
+
+/* Heading */
+
+h1{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+/* Cards */
+
+.right-side,
+.left-side{
+    width:100%;
+    padding:15px;
+    border-radius:8px;
+}
+
+/* Right Side */
+
+.right-side p{
+    font-size:15px;
+    line-height:1.9;
+    margin-bottom:12px;
+}
+
+.right-side span{
+    font-size:16px;
+}
+
+.right-side a{
+    font-size:14px;
+    word-break: break-word;
+}
+
+/* Left Side */
+
+.left-side p{
+    font-size:15px;
+    line-height:1.8;
+}
+
+.left-side span{
+    font-size:16px;
+}
+
+/* Form */
+
+label{
+    font-size:14px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:10px;
+    font-size:14px;
+}
+
+textarea{
+    height:100px;
+}
+
+/* Button */
+
+button{
+    width:100%;
+    padding:12px;
+    font-size:16px;
+}
+
+/* Google Map */
+
+iframe{
+    width:95%;
+    height:250px;
+    margin:30px auto;
+}
+
+/* Horizontal Line */
+
+hr{
+    margin:15px 0;
+}
+
+}
