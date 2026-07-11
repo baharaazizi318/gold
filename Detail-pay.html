@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="price1.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>جزئیات پرداخت</title>
+
+    <link rel="stylesheet" href="Detal.css" />
   </head>
+
   <body>
     <header>
       <div class="marquee">
@@ -243,111 +243,263 @@
       </nav>
     </header>
 
-    <section>
-      <div class="container">
-        <div class="price">
-          <div class="address">
-            <li><a href="index.html"> گالری بهار/</a></li>
-            <li><a href="special.html"> فروشگاه/</a></li>
-            <li><a href="feminine.html">زنانه/</a> </li>
-            <li><a href="necklace.html">گردنبند کارتیر/</a></li>
-            <li><a href="price3.html">گردنبند کارتیر سه مروارید</a></li>
+    <div class="container">
+      <!-- مراحل خرید -->
 
-          </div>
-         
-          <div class="content">
-            <p style="font-size: 22px">گردنبند کارتیر سه مروارید</p>
-
-            <p style="margin-top: 20px; font-size: 18px">قیمت: 800000 افغانی</p>
-
-            <p style="margin-top: 20px; font-size: 20px">وزن :2.7 گرم</p>
-
-            <select>
-              <option>رز گلد</option>
-              <option>سفید نما</option>
-              <option>نقره ای</option>
-              <option selected>زرد</option>
-              <option>رنگ های بیشتر</option>
-            </select>
-
-            <p style="margin-top: 30px; font-size: 20px">
-              سایز(انتخاب سایز ضروری است*):
-            </p>
-
-            <select>
-              <option>54</option>
-              <option>55</option>
-              <option selected>سایز انتخاب شده:55</option>
-              <option>از 54 به پایین</option>
-            </select>
-
-            <a href="cart.html">
-              <button>افزودن به سبد خرید</button>
-            </a>
-
-            <!-- توضی -->
-            <div class="explain">
-              <p style="font-size: 20px">توضیحات</p>
-              <p>کد کالا: WR400</p>
-
-              <p>
-                انگشتر طلا دامله فنری ، ساخته شده از طلای ۱۸ عیار و کاملاً دست
-                ساز می باشد
-              </p>
-            </div>
-
-            <!--جزییات محصول  -->
-            <div class="explain">
-              <p style="font-size: 20px">جزییات محصول</p>
-              <p>وزن: 2.7 گرم</p>
-              <p>جنسیت :زنانه</p>
-
-              <p>عیار طلا: ۱۸ عیار</p>
-
-              <p>رنگ طلا: رزگلد, زرد, سفید</p>
-
-              <p>نوع نگین :اتمی</p>
-              <p>وزن طلا: 2.00, 2.6</p>
-
-              <!-- قیمت-->
-              <div class="explain">
-                <p style="font-size: 20px">جزییات قیمت</p>
-                <p>قیمت کلی:50000 افغانی</p>
-                <p>
-                  (قیمت طلا خام + اجرت ) * وزن طلا + متعلقات + ۷٪سود + ۹٪ مالیات
-                </p>
-              </div>
-
-              <div class="send">
-                <div class="item">
-                  <i class="bi bi-gem"></i>
-                  <p>اصالت و ضمانت</p>
-                </div>
-
-                <div class="item">
-                  <i class="bi bi-box-seam"></i>
-                  <p>بسته بندی لوکس</p>
-                </div>
-
-                <div class="item">
-                  <i class="bi bi-truck"></i>
-                  <p>ارسال سریع و مطمن</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="steps">
+        <div class="step done">
+          <span>✓</span>
+          <p>سبد خرید</p>
         </div>
 
-        <div class="image">
-          <img src="../gold/images-ring/necklace1.jpg" class="image1" />
-          <img src="../gold/images-ring/neck1.jpg" class="demo" />
-          <img src="../gold/images-ring/neck2.jpg" class="demo" />
-          <img src="../gold/images-ring/neck3.jpg" class="demo" />
-          <img src="../gold/images-ring/neck7.jpg" class="demo" />
-          <img src="../gold/images-ring/neck5.jpg" class="demo" />
-          <img src="../gold/images-ring/neck6.jpg" class="demo" />
+        <div class="line"></div>
+
+        <div class="step active">
+          <span>2</span>
+          <p>جزئیات پرداخت</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="step">
+          <span>3</span>
+          <p>اتمام خرید</p>
         </div>
       </div>
-    </section>
+
+      <!-- محتوای صفحه -->
+
+      <div class="checkout">
+        <!-- فرم -->
+
+        <div class="billing">
+          <h2>جزئیات پرداخت</h2>
+
+          <form>
+            <div class="row">
+              <div class="input-box">
+                <label>نام *</label>
+
+                <input type="text" />
+              </div>
+
+              <div class="input-box">
+                <label>نام خانوادگی *</label>
+
+                <input type="text" />
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label>نام شرکت (اختیاری)</label>
+
+              <input type="text" />
+            </div>
+
+            <div class="input-box">
+              <label>کشور / منطقه *</label>
+
+              <input type="text" value="افغانستان" />
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label>ولایت*</label>
+                <select name="" id="">
+                  <option value="">یک گزینه را انتخاب کنید</option>
+                  <option value="">کابل</option>
+                  <option value="">هرات</option>
+                  <option value="">مزار</option>
+                  <option value="">غزنی</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label>شهر *</label>
+
+                <select name="" id="">
+                  <option value="">کابل</option>
+                  <option value="">هرات</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label>آدرس *</label>
+
+              <input type="text" placeholder="آپارتمان ,مجتمع,واحد و ..." />
+            </div>
+
+            <div class="input-box">
+              <label>کد پستی</label>
+
+              <input type="text" />
+            </div>
+
+            <div class="row">
+              <div class="input-box">
+                <label>شماره موبایل *</label>
+
+                <input type="tel" />
+              </div>
+
+              <div class="input-box">
+                <label>ایمیل *</label>
+
+                <input type="email" />
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label> نمبر تذکره*</label>
+
+              <input type="text" />
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" />
+
+              <span>ایجاد حساب کاربری؟</span>
+            </div>
+
+            <div class="input-box">
+              <label>یادداشت سفارش</label>
+
+              <textarea rows="6"></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- خلاصه سفارش -->
+
+        <div class="order">
+          <h2>سفارش شما</h2>
+
+          <div class="order-row">
+            <span>محصول</span>
+
+            <span>جمع جزء</span>
+          </div>
+
+          <div class="order-row">
+            <span>انگشتر طلا پیج تک نگین زرد</span>
+
+            <span>50,000 افغانی</span>
+          </div>
+
+          <hr />
+
+          <div class="order-row">
+            <strong>جمع جزء</strong>
+
+            <strong>50,000 افغانی</strong>
+          </div>
+
+          <div class="order-row">
+            <strong>مجموع</strong>
+
+            <strong>50,000 افغانی</strong>
+          </div>
+
+          <hr />
+
+          <div class="payment">
+            <label>
+              <input type="radio" checked />
+
+              پرداخت آنلاین
+            </label>
+
+            <p>پرداخت از طریق درگاه بانکی امن.</p>
+          </div>
+
+          <button class="btn"><a href="payment.html" style="text-decoration: none; color: white;">رفتن به درگاه پرداخت</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        
+      <!-- ستون اول -->
+        <div class="footer-box">
+
+        <h3 class="deal">لینک‌های مفید</h3>
+
+        <a href="index.html">خانه</a>
+
+        <a href="special.html">محصولات</a>
+
+        <a href="About-us.html">درباره ما</a>
+
+        <a href="#">اطلاعات تحویل</a>
+
+        <a href="#">ارسال به ولایات</a>
+
+        <a href="#">گزینه‌های پرداخت</a>
+
+        <a href="#">پیگیری سفارش</a>
+
+        <a href="#">یافتن فروشگاه</a>
+
+    </div>
+
+      
+
+      <!-- ستون دوم -->
+      <div class="footer-box">
+        <h3 class="deal">تماس با ما</h3>
+
+        <p>079794560</p>
+
+        <a href="#">با ما چت کنید</a>
+
+        <a href="#">راهنما و سوالات متداول</a>
+
+        <a href="#">info@baharajewelry.com</a>
+
+        <div class="social">
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+
+          <a href="#"><i class="bi bi-instagram"></i></a>
+
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+
+          <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+      <!-- ستون سوم -->
+      <div class="footer-box">
+        <h3 class="deal">اطلاعات</h3>
+
+        <a href="#">وبلاگ</a>
+
+        <a href="#">پیشنهادات</a>
+
+        <a href="#">راهنما و سوالات متداول</a>
+      </div>
+
+      <!-- ستون چهارم -->
+       <div class="footer-box">
+        <img src="../gold/images/logo3.jpg" class="mark" alt="لوگو" />
+
+        <p class="App">همین حالا اپلیکیشن بهار را دانلود کنید</p>
+
+        <img src="../gold/images/QR-code1.jpg" class="QR" alt="QR Code" />
+
+        <button class="btn2">دانلود از پلی استور</button>
+      </div>
+      
+    </footer>
+
+    <div class="copyright">
+      <p>تمامی حقوق این وب‌سایت متعلق به گالری جواهرات بهار می‌باشد. © 2026</p>
+
+      <p>
+        تمامی کالاها و خدمات این سایت دارای مجوزهای لازم بوده و فعالیت آن تابع
+        قوانین جمهوری اسلامی افغانستان می‌باشد.
+      </p>
+    </div>
   </body>
 </html>
