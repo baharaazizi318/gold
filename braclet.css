@@ -101,26 +101,29 @@ nav a:hover {
 
 
 /* header*/
-.marquee{
-    width:100%;
-    overflow:hidden;
-    background:#1A1A1A;
-    padding:10px 0;
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #FFFCF5;
+  padding: 10px 0;
 }
 
-.marquee-content{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    white-space:nowrap;
-    width:100%;
-    animation:scroll 20s linear infinite;
-    direction:rtl;
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  width: 100%;
+  animation: scroll 30s linear infinite;
+  direction: rtl;
 }
 
-.marquee-content p{
-    margin:0;
-    color: white;
+.marquee-content p {
+  margin: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 @keyframes scroll{
     from{
@@ -237,6 +240,7 @@ nav a:hover {
     display:block;
     object-fit:cover;
     border: 1px solid  #D4AF37;
+    background-image: linear-gradient( rgba(250, 247, 240, 0.9));
     box-shadow:0 10px 30px rgba(228, 190, 55, 0.12);
     border-radius: 6px;
     transition: 0.4s;

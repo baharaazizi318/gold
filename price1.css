@@ -149,7 +149,7 @@ nav a:hover {
 .marquee {
   width: 100%;
   overflow: hidden;
-  background: #1a1a1a;
+  background: #FFFCF5;
   padding: 10px 0;
 }
 
@@ -159,13 +159,16 @@ nav a:hover {
   gap: 10px;
   white-space: nowrap;
   width: 100%;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
   direction: rtl;
 }
 
 .marquee-content p {
   margin: 0;
-  color: white;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
 
 @keyframes scroll {

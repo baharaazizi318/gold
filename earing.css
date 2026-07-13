@@ -154,27 +154,31 @@ nav a:hover{
 
 
 /* header*/
-.marquee{
-    width:100%;
-    overflow:hidden;
-    background:#1A1A1A;
-    padding:10px 0;
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #FFFCF5;
+  padding: 10px 0;
 }
 
-.marquee-content{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    white-space:nowrap;
-    width:100%;
-    animation:scroll 20s linear infinite;
-    direction:rtl;
+.marquee-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  width: 100%;
+  animation: scroll 30s linear infinite;
+  direction: rtl;
 }
 
-.marquee-content p{
-    margin:0;
-    color: white;
+.marquee-content p {
+  margin: 0;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 60px;
 }
+
 @keyframes scroll{
     from{
         transform:translateX(100%);

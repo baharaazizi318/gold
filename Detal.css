@@ -9,10 +9,11 @@
 }
 
 /* header*/
+
 .marquee {
   width: 100%;
   overflow: hidden;
-  background: #1a1a1a;
+  background: #FFFCF5;
   padding: 10px 0;
 }
 
@@ -28,7 +29,7 @@
 
 .marquee-content p {
   margin: 0;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   gap: 60px;
