@@ -20,7 +20,7 @@ body {
 .marquee-content {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap:1200px;
   white-space: nowrap;
   width: 100%;
   animation: scroll 30s linear infinite;

@@ -148,7 +148,7 @@ iframe{
     max-width:1200px;
     height:450px;
     margin:50px auto;
-    border:1px solid goldenrod;
+  
     outline:1px solid goldenrod;
     border-radius:10px;
     box-shadow:0 3px 10px rgba(0,0,0,.2);
